@@ -1,5 +1,5 @@
     //ukljuci samo ako je admin, inace nista od koda ispit
-    //razni handleri
+    //razni handleri koji sluze za dodavanje novog zadataka
 
     $("button.archive").on("click",function(){
         $(this).parent().css("display","none");
