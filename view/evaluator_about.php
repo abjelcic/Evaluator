@@ -1,4 +1,4 @@
-<?php require_once __DIR__ . '/chat_header.php'; ?>
+<?php require_once __DIR__ . '/evaluator_header.php'; ?>
 
     
     <h2><?php echo $title;?></h2>
@@ -8,22 +8,22 @@
     
     <ul>        
         <li>
-        Select <a href="index.php?rt=chat/progress">Progress</a> to keep an eye on your progress.
+        Select <a href="index.php?rt=evaluator/progress">Progress</a> to keep an eye on your progress.
         </li>
         
         <li>
-        Select <a href="index.php?rt=chat/archives">Archives</a> to list archieved problems.
+        Select <a href="index.php?rt=evaluator/archives">Archives</a> to list archieved problems.
         </li>
         
         <li>
-        Select <a href="index.php?rt=chat/news">News</a> to see recent news.
+        Select <a href="index.php?rt=evaluator/news">News</a> to see recent news.
         </li>
         
         <li>
-        Select <a href="index.php?rt=chat/recent">Recent</a> to see the most recent problems.
+        Select <a href="index.php?rt=evaluator/recent">Recent</a> to see the most recent problems.
         </li>
         
     </ul>
 
 
-<?php require_once __DIR__ . '/chat_footer.php'; ?>
+<?php require_once __DIR__ . '/evaluator_footer.php'; ?>

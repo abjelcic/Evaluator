@@ -1,4 +1,4 @@
-<?php require_once __DIR__ . '/chat_header.php'; ?>
+<?php require_once __DIR__ . '/evaluator_header.php'; ?>
 
     
     <h2><?php echo $title;?></h2>
@@ -25,6 +25,9 @@
             $i++;
         }
     ?>
+
+
+
 
     <script>
         $(document).ready(function(){
@@ -55,17 +58,14 @@
 
                 SolveBtn.on("click",function()
                 {
-                    let link = "index.php?rt=chat/problem&id_problem=" + $(this).data("no");
+                    let link = "index.php?rt=evaluator/problem&id_problem=" + $(this).data("no");
                     window.location.href = link;
                 });
                 Problem.append( SolveBtn );
-                
-
-
-            
             }
         });
     </script>
     
+
     
-<?php require_once __DIR__ . '/chat_footer.php'; ?>
+<?php require_once __DIR__ . '/evaluator_footer.php'; ?>

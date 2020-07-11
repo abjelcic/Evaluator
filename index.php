@@ -15,7 +15,7 @@
 	if( isset( $_GET['rt'] ) )
 		$route = $_GET['rt'];
 	else
-		$route = 'chat';
+		$route = 'evaluator';
 
 	$parts = explode( '/', $route );
 

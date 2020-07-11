@@ -20,7 +20,7 @@ class LoginController
 				if( $FailMessage === '' )
 				{
 					//Login successful, rerun the webpage
-					$UserHomePage = 'index.php?rt=chat/index';
+					$UserHomePage = 'index.php?rt=evaluator/index';
 					header( 'Location: ' . $UserHomePage );
 					exit(0);
 				}
@@ -32,7 +32,7 @@ class LoginController
 				$FailMessage = LoginService::RegisterHandler( $_POST['username'] , $_POST['password'] , $_POST['email']);
 				if( $FailMessage === '' )
 				{
-					$title = 'Chat';
+					$title = 'Evaluator';
 					$message = 'Check your e-mail to finish the registration';
 					require_once __DIR__ . '/../view/login_index.php';
 					exit(0);
@@ -52,7 +52,7 @@ class LoginController
 			}
 			
 			//Remain on login page
-	     	$title = 'Chat';
+	     	$title = 'Evaluator';
 			$message = $FailMessage === '' ? 'Please login or register' : $FailMessage;
 			require_once __DIR__ . '/../view/login_index.php';
 			

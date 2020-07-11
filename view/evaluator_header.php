@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Chat</title>
-	<link rel="stylesheet" type="text/css" href="css/chatstyle.css">
+	<title>Evaluator</title>
+	<link rel="stylesheet" type="text/css" href="css/evaluatorstyle.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
@@ -28,7 +28,7 @@
 									"logout"      	=>  "Logout"      );
 				foreach( $MenuItems as $menukey => $menuvalue )
 				{
-					$href = "index.php?rt=chat/" . $menukey;
+					$href = "index.php?rt=evaluator/" . $menukey;
 
 					echo "<li><a href=\"" . $href . "\"";
 					if( isset( $selected ) && $selected === $menukey )
@@ -38,13 +38,7 @@
 					echo ">" . $menuvalue . "</a></li>\n";
 				}
 			?>
-
-			<!-- <li><a href="index.php?rt=chat/mychannels">My channels</a></li> 			-->
-			<!-- <li><a href="index.php?rt=chat/allchannels">All channels</a></li>			-->
-			<!-- <li><a href="index.php?rt=chat/newchannel">Start a new channels</a></li>	-->
-			<!-- <li><a href="index.php?rt=chat/mymessages">My messages</a></li>			-->
-			<!-- <li><a href="index.php?rt=chat/logout">Logout</a></li>						-->
-		
+					
 		</ul>
 	</nav>
 	<hr>

@@ -209,7 +209,6 @@ class EvaluatorService
       return $ans[0];
     }
 
-
     public static function TotalNumberofProblems()
     {
       $db = DB::getConnection();
@@ -329,8 +328,6 @@ class EvaluatorService
       
       return TRUE;
     }
-
-
 
 };
 

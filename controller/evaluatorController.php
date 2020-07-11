@@ -1,15 +1,13 @@
 <?php 
 
 require_once __DIR__ . '/../model/evaluatorservice.class.php';
-require_once __DIR__ . '/../model/channel.class.php';
 
-
-class ChatController
+class EvaluatorController
 {
 	public static function index() 
 	{
         //Default for chat/index
-        ChatController::About();
+        EvaluatorController::About();
     }
     
     public static function About()

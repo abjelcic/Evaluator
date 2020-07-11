@@ -1,4 +1,4 @@
-<?php require_once __DIR__ . '/chat_header.php'; ?>
+<?php require_once __DIR__ . '/evaluator_header.php'; ?>
 
     
     <h2><?php echo $title;?></h2>
@@ -21,4 +21,4 @@
         </p>
     </section>
 
-<?php require_once __DIR__ . '/chat_footer.php'; ?>
+<?php require_once __DIR__ . '/evaluator_footer.php'; ?>
